@@ -1440,6 +1440,12 @@ h1, h2, h3, h4 {
     border: 1px solid rgba(244, 63, 94, 0.25);
 }
 
+.phone-icon {
+    background: rgba(16, 185, 129, 0.1);
+    color: #34d399;
+    border: 1px solid rgba(16, 185, 129, 0.25);
+}
+
 .channel-info {
     flex: 1;
 }
