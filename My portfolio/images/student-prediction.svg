@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mlBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#150e28" />
+      <stop offset="100%" stop-color="#05030a" />
+    </linearGradient>
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="360" fill="url(#mlBg)" rx="16"/>
+
+  <!-- Browser Frame -->
+  <rect x="25" y="25" width="550" height="310" rx="12" fill="#120d24" stroke="rgba(168,85,247,0.3)" stroke-width="1.5"/>
+  <rect x="25" y="25" width="550" height="38" rx="12" fill="#1e163b"/>
+  <circle cx="45" cy="44" r="5" fill="#ef4444"/>
+  <circle cx="62" cy="44" r="5" fill="#eab308"/>
+  <circle cx="79" cy="44" r="5" fill="#22c55e"/>
+
+  <rect x="110" y="34" width="280" height="20" rx="6" fill="#120d24" stroke="rgba(255,255,255,0.08)"/>
+  <text x="125" y="48" fill="#c084fc" font-family="'Inter', sans-serif" font-size="10">ai-predictor.local/model-v2</text>
+
+  <!-- Model Header Banner -->
+  <g transform="translate(45, 75)">
+    <rect x="0" y="0" width="510" height="50" rx="8" fill="#1c1438" stroke="rgba(168,85,247,0.2)"/>
+    <circle cx="28" cy="25" r="14" fill="rgba(168,85,247,0.2)"/>
+    <!-- AI Brain Icon Vector -->
+    <path d="M 22,25 C 22,21 24,19 28,19 C 32,19 34,21 34,25 C 34,29 32,31 28,31 C 24,31 22,29 22,25 Z M 28,21 L 28,29 M 24,25 L 32,25" fill="none" stroke="#c084fc" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="54" y="24" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="12" font-weight="700">Student Grade Prediction Engine (ML / Scikit-Learn)</text>
+    <text x="54" y="39" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="10">Supervised Regression Model - Features: Study Hours, Attendance, Past Marks</text>
+    
+    <rect x="420" y="14" width="75" height="22" rx="11" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.4)"/>
+    <text x="457" y="29" fill="#4ade80" font-family="'Inter', sans-serif" font-size="9" font-weight="700" text-anchor="middle">94.8% ACC</text>
+  </g>
+
+  <!-- Left: Model Inputs Form -->
+  <g transform="translate(45, 138)">
+    <rect x="0" y="0" width="220" height="180" rx="8" fill="#191133" stroke="rgba(255,255,255,0.06)"/>
+    <text x="14" y="24" fill="#f1f5f9" font-family="'Inter', sans-serif" font-size="11" font-weight="700">Predictive Parameters</text>
+
+    <!-- Input 1 -->
+    <text x="14" y="48" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">Daily Study Hours (6.5 hrs)</text>
+    <rect x="14" y="55" width="190" height="8" rx="4" fill="#2d1f4d"/>
+    <rect x="14" y="55" width="145" height="8" rx="4" fill="url(#aiGrad)"/>
+
+    <!-- Input 2 -->
+    <text x="14" y="82" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">Attendance Rate (92%)</text>
+    <rect x="14" y="89" width="190" height="8" rx="4" fill="#2d1f4d"/>
+    <rect x="14" y="89" width="175" height="8" rx="4" fill="url(#aiGrad)"/>
+
+    <!-- Input 3 -->
+    <text x="14" y="116" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9">Lab Practice (8.0/10)</text>
+    <rect x="14" y="123" width="190" height="8" rx="4" fill="#2d1f4d"/>
+    <rect x="14" y="123" width="150" height="8" rx="4" fill="url(#aiGrad)"/>
+
+    <!-- Button -->
+    <rect x="14" y="145" width="190" height="24" rx="6" fill="url(#aiGrad)"/>
+    <text x="109" y="161" fill="#ffffff" font-family="'Inter', sans-serif" font-size="10" font-weight="700" text-anchor="middle">Run Prediction</text>
+  </g>
+
+  <!-- Right: ML Neural Graph / Prediction Result -->
+  <g transform="translate(280, 138)">
+    <rect x="0" y="0" width="275" height="180" rx="8" fill="#191133" stroke="rgba(255,255,255,0.06)"/>
+    <text x="14" y="24" fill="#f1f5f9" font-family="'Inter', sans-serif" font-size="11" font-weight="700">Regression Curve &amp; Output</text>
+
+    <!-- Regression Chart Grid -->
+    <line x1="20" y1="125" x2="160" y2="125" stroke="rgba(255,255,255,0.1)"/>
+    <line x1="20" y1="40" x2="20" y2="125" stroke="rgba(255,255,255,0.1)"/>
+
+    <!-- Points -->
+    <circle cx="35" cy="115" r="3" fill="#a855f7" opacity="0.6"/>
+    <circle cx="50" cy="105" r="3" fill="#a855f7" opacity="0.6"/>
+    <circle cx="70" cy="95" r="3" fill="#a855f7" opacity="0.6"/>
+    <circle cx="95" cy="80" r="3" fill="#a855f7" opacity="0.6"/>
+    <circle cx="120" cy="65" r="3" fill="#a855f7" opacity="0.6"/>
+    <circle cx="145" cy="50" r="3" fill="#a855f7" opacity="0.6"/>
+
+    <!-- Regression Fit Line -->
+    <line x1="25" y1="120" x2="155" y2="45" stroke="url(#lineGrad)" stroke-width="2.5"/>
+
+    <!-- Result Pill -->
+    <rect x="175" y="45" width="85" height="80" rx="8" fill="#241747" stroke="rgba(56,189,248,0.4)"/>
+    <text x="217" y="65" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle">PREDICTION</text>
+    <text x="217" y="93" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="22" font-weight="800" text-anchor="middle">91.4%</text>
+    <text x="217" y="112" fill="#4ade80" font-family="'Inter', sans-serif" font-size="9" font-weight="600" text-anchor="middle">Grade: A+</text>
+  </g>
+</svg>
