@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lingesh-v2.github.io/Vlognify_lingesh_devz/sitemap.xml
+Sitemap: https://lingesh-v2.github.io/Portfolio/sitemap.xml
